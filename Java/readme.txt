@@ -1,0 +1,1 @@
+text for Java practices
