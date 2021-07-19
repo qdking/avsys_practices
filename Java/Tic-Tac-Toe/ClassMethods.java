@@ -7,8 +7,8 @@ public class ClassMethods {
 
     public static final int ROWS = 3;
     public static final int COLUMNS = 3;
-    public static int game_counter = 0;     // game_counter: number of moves made
-    public static int results_counter = 0;     // 1 if player wins, 2 if computer wins. 0 by default.
+    private static int game_counter = 0;     // game_counter: number of moves made
+    private static int results_counter = 0;     // 1 if player wins, 2 if computer wins. 0 by default.
 
     int[][] Grid = new int[ROWS][COLUMNS];
 
