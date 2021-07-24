@@ -1,0 +1,20 @@
+Design a project to display items in a Cafeteria.
+ Allow user to add items and write code that computes the total of items also add service taxes and tip on a restaurant bill. 
+The program should ask the user to enter the multiple items from the displayed list.
+ The tax should be 6.75% of the meal charge. The tip should be 10% of the total after adding the tax/ and higher number if the user wants to tip.
+ Display the items charge, tax amount, tip amount, and total bill on the screen.
+
+---------------------------------------
+Create which data structure ?
+Item no. 1 - $price1
+Item no. 2 - $price2
+Price is in two decimal places. 
+Console
+1. Print out the display item names and number.
+
+2. Prompt user to enter item number available and the quantity in the display. Keep prompting to add on all the prices together until user says no. 
+Tax
+Tip – 10% amount or any higher amount value 
+Total bill = ((Prices sum * 10000 * 1.0675)/10000)*100  * 1.10 )/100
+
+3. Print out list of items ordered and its price, after tax, and after tips, with the total bill at the bottom
