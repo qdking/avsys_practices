@@ -5,49 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GGameShock</title>
-    <link rel="stylesheet" href="p1css.css">
+    <link rel="stylesheet" href="gameweb_css.css">
+    <style>
+      iframe{
+        padding:5px;
+        padding-bottom: 20px;
+      }
+      h2.h2-hot{
+        text-shadow: 2px 2px 10px rgb(255, 48, 48);
+      }
+      a{
+        text-decoration: none;
+        color: black;
+      }
+      a.visited{
+        text-decoration: none;
+        color: black;
+      }
+      h2.h2-normal{
+        text-shadow: 2px 2px 10px yellowgreen;
+      }
+    </style>
 </head>
 <body>
   <header>
     <nav>
-        <div class="entirenavibar" id="navibar">
-              
+        <div class="headerFooterBlock" id="naviBar">                  
               <!---------------------Logo--------------------->
               <a href="home.html">
-                  <img src="https://tinyurl.com/2b8vat79"  class="logo" ALIGN="left" style= "width:80px;padding-top: 8px;"></img>
+                  <img src="https://tinyurl.com/2b8vat79"  class="logo" ALIGN="left"></img>
                 </a>   
               
               <!-----------------Company Name----------------->
                   <div style="padding-left:100px;">
-                  <h1 style="font-family:Arial, Helvetica, sans-serif; font-size:30px;"><i><b>
-                  <a href ="home.html" style="text-decoration:none; color:gold;">
-                    &nbsp;&nbsp;GGameShock
-                  </a></b></i></h1>
+                    <h1 id = "companyTitle"><i><b>
+                    <a href ="home.html" style="text-decoration:none; color:gold;">
+                      &nbsp;&nbsp;GGameShock                       
+                    </a></b></i></h1>
                   </div>
               
               <!-----------Navigation Dropdown Menu----------->
-              
-              <div class="navibar">
+
+              <div class="naviBar" id = "searchbox">
+              <div class = "dropdown" id = "searchDiv">
+                <form>
+                  <input type = "search" placeholder = "Search games">
+                </form>
+              </div>
+
               <div class="dropdown">
-                  <button class="dropbtn"><a href="pc_games.html" class="navihead">Games</a></button>
+                  <button class="dropbtn"><a href="pc_games.html" class="naviHead">Games</a></button>
                   <div class="dropdown-content">
                     <a href="pc_games.html">PC</a>
-                    <a href="ps_games.html">PS5/PS4</a>
-                    <a href="xbox.html">XBox</a>
-                    <a href="switch_games.html">Switch</a>
+                    <a href="#">PS5/PS4</a>
+                    <a href="#">XBox</a>
+                    <a href="#">Switch</a>
                   </div>
               </div>
               
                 <div class="dropdown">
-                  <button class="dropbtn"><a href="game_reviews.html" class="navihead">Reviews</a></button>
+                  <button class="dropbtn"><a href="game_reviews.html" class="naviHead">Reviews</a></button>
                   <div class="dropdown-content">
-                    <a href="game_reviews.html">Games</a>
+                    <a href="game_reviews.html">Reviews</a>
                     <a href="forum.html">Forum</a>
                   </div>
                 </div>
               
                 <div class="dropdown">
-                <button class="dropbtn"><a href="login.html" class="navihead">Login/Register</a>
+                <button class="dropbtn"><a href="login.html" class="naviHead">Login/Register</a>
                 </button>
                    <div class="dropdown-content">
                      <a href="login.html">Login</a>
@@ -55,7 +80,6 @@
                      <a href="forgot_password.html">Forgot Password</a>
                   </div>
                 </div>
-              
         </div>
       </nav>
 </header>
@@ -66,44 +90,62 @@
       <div class="flex-item">Dynamically sized content</div>
   </div> -->
 
-<div style ="border-color: black;border-width: 1px;">
-  <h2>Mortal Kombat</h2>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/NYH2sLid0Zc" title="YouTube video player"
+<div class = "container">
+  <h2 class = "h2-hot">Mortal Kombat (New!)</h2>
+  <iframe width="90%" height="315" src="https://www.youtube.com/embed/NYH2sLid0Zc" title="YouTube video player"
    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </iframe>
-
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/d9Gu1PspA3Y" title="YouTube video player" 
-  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/aTS9n_m7TW0" title="YouTube video player" frameborder="0"
-   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+  <span>Hunted by the fearsome warrior Sub-Zero, MMA fighter Cole Young finds sanctuary at the temple of Lord Raiden. </span>
 </div>
 
+<div class = "container">
+  <h2 class = "h2-hot">Borderlands 3 (New!)</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/d9Gu1PspA3Y" title="YouTube video player" 
+  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <span> Borderlands 3 is an action role-playing first-person shooter video game developed by Gearbox Software.</span>
+</div>
 
+<div class = "container">
+  <a href = "game_reviews.html"><h2 class = "h2-hot">Call of Duty (New!) </h2></a>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/aTS9n_m7TW0" title="YouTube video player" frameborder="0"
+   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <span>Call of Duty is a first-person shooter video game franchise since 2003, focusing on games set in World War II. </span>
+</div>
 
+<div class = "container">
+  <h2 class = "h2-normal">PUBG <span style = "font-size: 12px;">classic</span></h2> 
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/URBy9t6e8rY" title="YouTube video player" frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
+<div class = "container">
+  <h2 class = "h2-normal">Mario Kart Nintendo <span style = "font-size: 12px;">classic</span></h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/tKlRN2YpxRE" title="YouTube video player" frameborder="0"
+   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
+<div class = "container">
+  <h2 class = "h2-normal">Fortnite <span style = "font-size: 12px;">classic</span></h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/-NycdXYBeG4" title="YouTube video player" frameborder="0"
+   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
-
-
-<footer style = "text-align: center; color: white; background-color: rgb(56, 56, 56);">
+<!-- Footer -->
+<footer class = "headerFooterBlock" style = "text-align: center;">
   <br>
     <a href = "https://www.facebook.com/GameSpot/" target="_blank">
-        <img src ="https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png?w=512&h=512" style = " width: 35px; height:35px"
+        <img src ="https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png?w=512&h=512" class = "tinyIcons"
         title = "Connect with us on Facebook."></a>
-
     <a href = "https://www.instagram.com/gamespot/?hl=en" target="_blank">
-        <img src ="http://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png" style = " width: 35px; height:35px"
+        <img src ="http://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png" class = "tinyIcons"
         title = "Follow us on Instagram."> 
     </a>
     <br>
-    <address><a href ="mailto:enquiry@ggameshock.com" style = "color: white;"title = "Contact us via email.">enquiry@ggameshock.com</a></address>
+    <address><a href ="mailto:enquiry@ggameshock.com" style = "color: white;" title = "Contact us via email.">enquiry@ggameshock.com</a></address>
     <address>Heaven's Areana #06-105 Singapore 5206105</address>
     <br>
-    <iframe src="https://tinyurl.com/y5o4m7j7" width="150" height="150" frameborder="0" style="border-radius: 30%;" allowfullscreen="" aria-hidden="false" tabindex="0" ALIGN="center"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.1113903339!2d103.85351448985428!3d1.3085365742535953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da193bb69442f5%3A0xb2dc5b4451335bf9!2sMarina%20Square!5e0!3m2!1sen!2ssg!4v1626080026603!5m2!1sen!2ssg"
+     width="200" height="200" style="border-radius: 30%;" allowfullscreen="" loading="lazy"></iframe>
     <p> All Copyrights reserved July 2021.<sup>©</sup> GGameShock </p>
 </footer>
     

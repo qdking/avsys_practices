@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="gameweb_css.css">
+</head>
+<body style = "background-color: #4267B2;">
+    <div class = "formBody">
+        <h1>Registration Form</h1>
+        <fieldset>
+        <legend><b>Basic Mandatory Info</b></legend>
+        <form action ="thankyou.html" target = "_self" method = "POST" name = "registrationForm" autocomplete="off">
+            <label for = "first_name"><b>Username</b></label>
+            <input type = "text" name = "user_name" id = "user_name" autofocus required>
+            <br><br>
+            <label><b>Email address</b></label>
+            <input type="email" name="email" tabindex="2" required><br><br>
+            <label><b>Password</b></label>
+            <input type = "password" name = "password" id = "password" autofocus placeholder="min.6 characters" required>
+            <br><br>
+            <label><b>Confirm Password</b></label>
+            <input type = "password" name = "password" id = "password" autofocus placeholder="re-type your password" required>
+            <br><br>
+        </fieldset>
+
+    <fieldset>
+        <legend>Additional info</legend>
+
+            <label for = "first_name">First Name</label>
+            <input type = "text" name = "first_name" id = "first_name" placeholder="name will be confidential" autofocus>
+            <br><br>
+            <label for = "last_name">Last Name</label>
+            <input type = "text" name = "last_name" id = "last_name" placeholder="name will be confidential" autofocus>
+            <br><br>
+            <label>Birthdate</label>
+            <input type = "date" name = "Birthdate" max = "2021-07-13" autofocus>
+            <br><br>
+            <input type = "radio" name = "gender" value = "male" autofocus>
+            <label>Male</label>
+            <input type = "radio" name = "gender" value = "female" autofocus>
+            <label>Female</label>
+            <br><br>
+            Tell us more about yourself or the games you play:
+            <br>
+            <textarea name="message" rows="10" cols="50" required>
+            </textarea>
+            
+            <br><br>   
+            <input type = "submit" name = "submit">
+            <input type="reset" name="Reset">
+            <br><br>
+            <p>Already have an account? <a href = "login.html">Click here</a> to login.</p>
+            <p>Or <a href = "home.html">Click here</a> to go back to homepage.</p>
+        </form>
+    </fieldset>
+
+    </div>
+</body>
+</html>
