@@ -1,0 +1,63 @@
+  body{
+    background-color: #4267B2;
+    font-size: larger;
+  }
+
+  .grid-container{
+    background-image: linear-gradient(315deg, white, pink);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding:20px;
+    gap: 10px;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 3%;
+    border: 1px solid black;
+  }
+
+  .grid-container>div{
+        background-color: white;
+        padding: 30px;
+        /* border: 0.5px solid grey; */
+        height: 120px;
+    }
+
+  .col-3{
+    grid-column-start: 1; 
+    grid-column-end: 4;
+  }    
+
+  .col-2-1-2{
+    /* grid-column: 1/span 2; */
+    grid-column-start: 1; 
+    grid-column-end: 3;
+  }    
+
+  .col-2-2-3{
+    grid-column-start: 2; 
+    grid-column-end: 4;
+  }
+
+  .mainBody{
+    height: 240px; 
+  }
+
+  div#companyTitleDiv{
+    text-align: center;
+    font-size: 180%;
+    font-weight: bold;
+    padding-top: 20px;
+    background-image: linear-gradient(to right, white, gold);
+    text-shadow: 5px 5px 5px red;
+  }
+
+  ol, li{
+    font-weight: bold;
+  }
+
+  p{
+    color: white;
+    font-size: 24px;
+    text-align: center;
+  }
