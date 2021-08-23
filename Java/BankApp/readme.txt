@@ -1,4 +1,4 @@
-A small bank app to
+A small bank app based on Servlets to
 
 - Register a bank account 
 - Login into bank account
